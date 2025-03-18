@@ -76,7 +76,7 @@ const server = https.createServer(options, app);
 
 
 server.listen(process.env.PORT, '0.0.0.0', () => {
-  console.log("Server running on https://localhost:5000");
+  
 });
 
 
