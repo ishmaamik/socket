@@ -75,7 +75,7 @@ const server = https.createServer(options, app);
 
 
 
-server.listen(6000, () => {
+server.listen(6000, '0.0.0.0', () => {
   console.log("Server running on https://localhost:5000");
 });
 
