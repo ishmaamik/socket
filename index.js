@@ -1,6 +1,6 @@
 
 import express from 'express';
-import https from 'https';
+import http from 'http';
 import { Server } from 'socket.io';
 import crypto from 'crypto'
 const app = express();
@@ -11,7 +11,7 @@ const options = {
   honorCipherOrder: true, // Make sure the server respects the cipher order
 };
 
-const server = https.createServer(options, app);
+const server = http.createServer(options, app);
 
   const io = new Server(server, {
     cors: {
