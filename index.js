@@ -15,7 +15,7 @@ const server = http.createServer(options, app);
 
   const io = new Server(server, {
     cors: {
-      origin: ["http://localhost:5173", "https://codeera.onrender.com"], // Your client URL
+      origin: ["http://localhost:5173", "https://codeera.onrender.com", "https://codeera-j7tv.onrender.com"], // Your client URL
       methods: ["GET", "POST"],
       credentials: true
     },
